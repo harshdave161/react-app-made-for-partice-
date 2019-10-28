@@ -7,6 +7,7 @@
 body{
     overflow: hidden;
 }
+
 /*
 .avatar_style {
     margin: 20px;
@@ -38,4 +39,38 @@ body{
 }
 .button:hover{
     background: rgb(212, 212, 212);
+}
+.avatar_style{
+    padding: 10px;
+    background: #19A974;
+    margin: 20px;
+    width: 270px;
+    height: 400px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.wrapper{
+    display:inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width:750px){
+    body{
+        overflow: auto;
+    }
+    .avatar_style{
+        width: 70%;
+        background:  #FBF1A9;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .button{
+        margin-bottom: 20px;
+    }
 }
